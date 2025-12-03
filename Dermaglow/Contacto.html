@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>CLÍNICA MEDICINA ESTÉTICA - Dermaglow</title>
+
+  <!-- CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/Style_dermaglow.css" rel="stylesheet">
+
+  <style>
+    :root { --topbar-h: 36px; }
+
+    /* barra arriba */
+    .top-bar{
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1040;
+      background: #d9b060;
+      color:#fff;
+      font-size:14px;
+      height: var(--topbar-h);
+      display: flex;
+      align-items: center;
+    }
+    .top-bar i{ margin-right:6px; }
+
+    /* navbar debajo de la barra */
+    .navbar.fixed-top{
+      top: var(--topbar-h);
+    }
+
+    /* MUY IMPORTANTE: esto debe ir en TODAS las páginas */
+    body{
+      padding-top: calc(var(--topbar-h) + 72px); /* 72px ≈ alto navbar */
+    }
+  </style>
+</head>
+<body id="top">
+
+  <!-- BARRA SUPERIOR -->
+  <div class="top-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div><i class="bi bi-telephone"></i> 0987304821</div>
+      <div><i class="bi bi-envelope"></i> infodermaglow@gmail.com</div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-lg">
+    <div class="container">
+
+      <!-- logo en móvil -->
+      <a class="navbar-brand mx-auto d-lg-none" href="index.html">
+        <img src="images/gallery/Image_logo_two.png" alt="Dermaglow Logo" class="img-fluid" style="max-height: 70px;">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+
+          <!-- página inicio -->
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+
+          <!-- página nosotros -->
+          <li class="nav-item">
+            <a class="nav-link" href="Nosotros.html">Nosotros</a>
+          </li>
+
+          <!-- página salud general -->
+          <li class="nav-item">
+            <a class="nav-link" href="Salud.html">Salud general</a>
+          </li>
+
+          <!-- logo al centro en desktop -->
+          <a class="navbar-brand d-none d-lg-block" href="index.html">
+            <img src="images/gallery/Image_logo_two.png" alt="Dermaglow Logo" class="img-fluid" style="max-height: 70px;">
+          </a>
+
+          <!-- página tratamientos -->
+          <li class="nav-item">
+            <a class="nav-link" href="Tratamientos.html">Tratamientos</a>
+          </li>
+
+          <!-- página contacto -->
+          <li class="nav-item">
+            <a class="nav-link" href="Contacto.html">Atención en línea</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- ================== CITA PREVIA – Dermaglow ================== -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<br>
+  <br>
+
+<section class="cita-previa" id="cita">
+  <div class="cita-container">
+    <!-- Botones superiores opcionales -->
+    <div class="cta-row">
+      <a href="tel:+593000000000" class="cta-ghost">LLAMA AHORA</a>
+      <a href="https://wa.me/593000000000" target="_blank" rel="noopener" class="cta-wa">WHATSAPP</a>
+    </div>
+
+    <h3 class="titulo">CITA PREVIA</h3>
+    <p class="subtitulo">CLÍNICA MEDICINA ESTÉTICA DERMAGLOW</p>
+
+    <p class="lead">
+      Lo importante es la salud de nuestros pacientes, física y emocionalmente.
+      Pide tu cita <strong>GRATIS</strong> y sin compromiso para evaluar tu caso y recibir un
+      <strong>diagnóstico personalizado</strong>.
+    </p>
+
+    <!-- Aviso intermedio -->
+    <div class="pill">Si necesitas uno de nuestros tratamientos para regalar, <a href="#tarjeta">solicítanos tu Tarjeta Regalo</a></div>
+
+    <!-- Formulario -->
+    <form class="form-cita" action="https://formspree.io/f/xkgplblv" method="POST" novalidate>
+      <div class="grid">
+        <div class="field">
+          <label for="nombre" class="sr-only">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+        </div>
+
+        <div class="field">
+          <label for="telefono" class="sr-only">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" inputmode="tel" pattern="[0-9+\s\-()]{7,}" required>
+        </div>
+
+        <div class="field">
+          <label for="email" class="sr-only">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+
+        <div class="field">
+          <label for="especialidad" class="sr-only">Seleccione Especialidad</label>
+          <select id="especialidad" name="especialidad" required>
+            <option value="" selected disabled>Seleccione Especialidad</option>
+            <option>Medicina estética</option>
+            <option>Nutrición y Dietética</option>
+            <option>Fisioterapia</option>
+            <option>Dermatología</option>
+            <option>Consulta general</option>
+          </select>
+        </div>
+      </div>
+
+      <label class="checkbox">
+        <input type="checkbox" name="acepta" required>
+        <span>He leído y acepto la <a href="#privacidad">política de privacidad</a></span>
+      </label>
+
+      <button type="submit" class="btn-enviar">ENVIAR</button>
+    </form>
+  </div>
+</section>
+
+<style>
+  :root{
+    --rosa:#f87abf;
+    --dorado:#d9b060;
+    --gris:#6b6b6b;
+    --negro:#111;
+    --bordes:#e9e6e3;
+  }
+  .cita-previa{
+    font-family:'Poppins',sans-serif;
+    background:#faf8f6;
+    padding:48px 16px 64px;
+  }
+  .cita-container{
+    max-width:980px;
+    margin:0 auto;
+    text-align:center;
+  }
+
+  /* CTAs superiores */
+  .cta-row{
+    display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-bottom:24px;
+  }
+  .cta-ghost,.cta-wa{
+    display:inline-block; padding:10px 18px; border-radius:28px; text-decoration:none; font-weight:600;
+    border:2px solid var(--negro); color:var(--negro); background:#fff;
+  }
+  .cta-wa{ background:#25d366; border-color:#25d366; color:#fff; }
+  .cta-ghost:hover{ background:#f3f3f3; }
+  .cta-wa:hover{ filter:brightness(.95); }
+
+  .titulo{
+    letter-spacing:2px; color:#bda471; font-weight:700; margin:4px 0 4px; font-size:28px;
+  }
+  .subtitulo{
+    color:#9c9c9c; margin:0 0 12px; font-weight:600;
+  }
+  .lead{
+    color:#7a7a7a; max-width:860px; margin:0 auto 16px; line-height:1.7;
+  }
+
+  .pill{
+    display:inline-block; padding:12px 18px; border:1px solid #e5dccf; border-radius:24px;
+    background:#fff; margin:14px 0 26px; color:#7a6b57;
+  }
+  .pill a{ color:var(--dorado); font-weight:600; text-decoration:underline; }
+
+  .form-cita{ max-width:860px; margin:0 auto; }
+  .grid{
+    display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:12px;
+  }
+  .field input,.field select{
+    width:100%; padding:14px 16px; border-radius:6px; border:1px solid var(--bordes);
+    background:#fff; font-size:15px; color:#333; outline:none; transition:border-color .2s, box-shadow .2s;
+  }
+  .field input:focus,.field select:focus{
+    border-color:var(--rosa); box-shadow:0 0 0 3px #f87abf22;
+  }
+  .checkbox{
+    display:flex; align-items:center; gap:10px; justify-content:center; color:var(--gris);
+    margin:8px 0 18px;
+  }
+  .checkbox a{ color:var(--rosa); text-decoration:underline; }
+
+  .btn-enviar{
+    width:100%; max-width:650px; padding:14px 24px; border:none; border-radius:6px;
+    background:var(--negro); color:#fff; font-weight:700; letter-spacing:2px; cursor:pointer;
+    transition:transform .05s ease, filter .2s ease;
+  }
+  .btn-enviar:hover{ filter:brightness(1.05); }
+  .btn-enviar:active{ transform:translateY(1px); }
+
+  /* Accesibilidad */
+  .sr-only{
+    position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0;
+  }
+
+  /* Responsive */
+  @media (max-width:720px){
+    .grid{ grid-template-columns:1fr; }
+    .titulo{ font-size:24px; }
+  }
+</style>
+<!-- ================== /CITA PREVIA ================== -->

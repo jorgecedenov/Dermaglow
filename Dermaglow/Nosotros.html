@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>CLÍNICA MEDICINA ESTÉTICA - Dermaglow</title>
+
+  <!-- CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/Style_dermaglow.css" rel="stylesheet">
+
+  <style>
+    :root { --topbar-h: 36px; }
+
+    /* barra arriba */
+    .top-bar{
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1040;
+      background: #d9b060;
+      color:#fff;
+      font-size:14px;
+      height: var(--topbar-h);
+      display: flex;
+      align-items: center;
+    }
+    .top-bar i{ margin-right:6px; }
+
+    /* navbar debajo de la barra */
+    .navbar.fixed-top{
+      top: var(--topbar-h);
+    }
+
+    /* MUY IMPORTANTE: esto debe ir en TODAS las páginas */
+    body{
+      padding-top: calc(var(--topbar-h) + 72px); /* 72px ≈ alto navbar */
+    }
+  </style>
+</head>
+<body id="top">
+
+  <!-- BARRA SUPERIOR -->
+  <div class="top-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div><i class="bi bi-telephone"></i> 0987304821</div>
+      <div><i class="bi bi-envelope"></i> infodermaglow@gmail.com</div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-lg">
+    <div class="container">
+
+      <!-- logo en móvil -->
+      <a class="navbar-brand mx-auto d-lg-none" href="index.html">
+        <img src="images/gallery/Image_logo_two.png" alt="Dermaglow Logo" class="img-fluid" style="max-height: 70px;">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+
+          <!-- página inicio -->
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+
+          <!-- página nosotros -->
+          <li class="nav-item">
+            <a class="nav-link" href="Nosotros.html">Nosotros</a>
+          </li>
+
+          <!-- página salud general -->
+          <li class="nav-item">
+            <a class="nav-link" href="Salud.html">Salud general</a>
+          </li>
+
+          <!-- logo al centro en desktop -->
+          <a class="navbar-brand d-none d-lg-block" href="index.html">
+            <img src="images/gallery/Image_logo_two.png" alt="Dermaglow Logo" class="img-fluid" style="max-height: 70px;">
+          </a>
+
+          <!-- página tratamientos -->
+          <li class="nav-item">
+            <a class="nav-link" href="Tratamientos.html">Tratamientos</a>
+          </li>
+
+          <!-- página contacto -->
+          <li class="nav-item">
+            <a class="nav-link" href="Contacto.html">Atención en línea</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <main>
+
+            <section class="section-padding" id="about">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <h5>Conoce nuestra historia</h2>
+                    <h2 class="mt-auto mb-2">
+                                    Somos
+                                  <div class="animated-info">
+                                        <span class="animated-item">#Belleza</span>
+                                        <span class="animated-item">#Armonía</span>
+                                        <span class="animated-item">#Salud</span>
+                                    </div>
+                                    <br>
+                            <p style="text-align: justify;">
+                                Fundada en 2018, la <strong>Clínica Estética Dermaglow</strong> se especializa en tratamientos médicos sin cirugía y procedimientos anti-aging, orientados a mejorar la salud, la apariencia y el bienestar integral de nuestros pacientes. Contamos con profesionales capacitados y tecnología avanzada, lo que nos permite ofrecer resultados naturales y seguros. 
+                                <br><br>
+                                Nuestro enfoque combina la medicina estética con el cuidado personalizado, brindando servicios como rejuvenecimiento facial, depilación láser, tratamientos reductores, peelings y rellenos dérmicos. En <strong>Dermaglow</strong> creemos que la estética personal es parte esencial del bienestar, por eso trabajamos con ética, calidad y compromiso para resaltar la belleza de cada persona.</p>
+                        </div>
+
+                        <div class="col-lg-4 col-md-5 col-12 mx-auto">
+                            <div class="featured-circle bg-white shadow-lg d-flex justify-content-center align-items-center">
+                                <p class="featured-text"><span class="featured-number">08</span> Años<br> de experiencia</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- ESPECIALISTAS -->
+<section id="especialistas" class="py-5" style="background:#fff6f9;">
+  <div class="container">
+
+    <!-- título -->
+    <div class="text-center mb-5">
+        <p style="color:#f87abf; margin-bottom:5px;">
+            <strong>Nuestro equipo</strong></p>      
+        <h2 style="color:#414141;">
+        Especialistas en salud y estética
+      </h2>
+      <p style="color:#525252; max-width:620px; margin:15px auto 0;">
+        Profesionales capacitados en dermatología, medicina estética y bienestar integral.
+      </p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- especialista 1 -->
+      <div class="col-md-4">
+        <div style="background:#2a2a2d; border-radius:12px; overflow:hidden; text-align:center;">
+          <img src="images/gallery/Image_15.png" alt="Dra. Ana Romero" style="width:100%; height:360px; object-fit:cover;">
+          <div style="padding:20px;">
+            <h4 style="color:#fff; margin-bottom:5px; letter-spacing:0.5px;">Dra. Karla Romero</h4>
+            <p style="color:#f0d7a2; font-weight:500; margin-bottom:5px;">Dermatóloga Estética</p>
+            <p style="color:#888; font-size:0.85rem; margin-bottom:0;">REG. CMP 09876</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- especialista 2 -->
+      <div class="col-md-4">
+        <div style="background:#2a2a2d; border-radius:12px; overflow:hidden; text-align:center;">
+          <img src="images/gallery/Image_16.png" alt="Dra. Juliana Cedeño" style="width:100%; height:360px; object-fit:cover;">
+          <div style="padding:20px;">
+            <h4 style="color:#fff; margin-bottom:5px;">Dra. Juliana Cedeño</h4>
+            <p style="color:#f0d7a2; font-weight:500; margin-bottom:5px;">Medicina y Láser</p>
+            <p style="color:#888; font-size:0.85rem; margin-bottom:0;">REG. MSP 4624</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- especialista 3 -->
+      <div class="col-md-4">
+        <div style="background:#2a2a2d; border-radius:12px; overflow:hidden; text-align:center;">
+          <img src="images/gallery/Image_17.png" alt="Tatiana Perillo" style="width:100%; height:360px; object-fit:cover;">
+          <div style="padding:20px;">
+            <h4 style="color:#fff; margin-bottom:5px;">Dra. Renata Muñoz</h4>
+            <p style="color:#f0d7a2; font-weight:500; margin-bottom:5px;">Esteticista Clínica</p>
+            <p style="color:#888; font-size:0.85rem; margin-bottom:0;">Cert. Int. Estética</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- botón -->
+    <div class="text-center mt-5">
+      <a href="contacto.html" 
+         style="display:inline-block; background-color: #d9b060; color:#ffffff; padding:12px 40px; border-radius:30px; text-decoration:none;">
+        + Ver más especialistas
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+        <footer class="site-footer section-padding" id="contact">
+    <div class="container">
+        <div class="row">
+
+            <!-- Horario de atención -->
+            <div class="col-lg-5 me-auto col-12">
+                <h5 class="mb-lg-4 mb-3">Horario de Atención</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex">
+                        Domingo : Cerrado
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        Lunes a Viernes <span>8:00 AM - 19:30 PM</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        Sábados <span>10:30 AM - 5:30 PM</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Información de la clínica -->
+            <div class="col-lg-2 col-md-6 col-12 my-4 my-lg-0">
+                <h5 class="mb-lg-4 mb-3">Nuestra Clínica</h5>
+                <p>
+                    <a href="mailto:infodermaglow@gmail.com">infodermaglow@gmail.com</a>
+                </p>
+                <p>
+                    Torre Médica Solaris, Piso 10 - Consultorio 615<br>
+                    Calle José Orrantía Gonzales<br>
+                    Guayaquil - Ecuador
+                </p>
+            </div>
+
+            <!-- Redes sociales y logo -->
+            <div class="col-lg-3 col-md-6 col-12 ms-auto text-center">
+                <h5 class="mb-lg-4 mb-2">Encuéntranos en:</h5>
+                <ul class="social-icon">
+                    <li><a href="#" class="social-icon-link bi-facebook"></a></li>
+                    <li><a href="#" class="social-icon-link bi-twitter"></a></li>
+                    <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+                    <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+                </ul>
+
+                <div class="footer-bottom">
+                    <img src="images/gallery/Image_logo_one.png" alt="Logo Dermaglow" class="footer-logo">
+                    <p class="copyright-text">
+                        © Dermaglow 2025. Todos los derechos reservados.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/scrollspy.min.js"></script>
+        <script src="js/custom.js"></script>
+<!--
+
+TemplateMo 566 Medic Care
+
+https://templatemo.com/tm-566-medic-care
+
+-->
+    </body>
+</html>

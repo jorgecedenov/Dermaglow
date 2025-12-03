@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Clínica Estética - Dermaglow</title>
+
+  <!-- CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/Style_dermaglow.css" rel="stylesheet">
+
+  <style>
+    :root { --topbar-h: 36px; }
+
+    /* barra arriba */
+    .top-bar{
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1040;
+      background: #d9b060;
+      color:#fff;
+      font-size:14px;
+      height: var(--topbar-h);
+      display: flex;
+      align-items: center;
+    }
+    .top-bar i{ margin-right:6px; }
+
+    /* navbar debajo de la barra */
+    .navbar.fixed-top{
+      top: var(--topbar-h);
+    }
+
+    /* MUY IMPORTANTE: esto debe ir en TODAS las páginas */
+    body{
+      padding-top: calc(var(--topbar-h) + 72px); /* 72px ≈ alto navbar */
+    }
+  </style>
+</head>
+<body id="top">
+
+  <!-- BARRA SUPERIOR -->
+  <div class="top-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div><i class="bi bi-telephone"></i> 0987304821</div>
+      <div><i class="bi bi-envelope"></i> infodermaglow@gmail.com</div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-lg">
+    <div class="container">
+
+      <!-- logo en móvil -->
+      <a class="navbar-brand mx-auto d-lg-none" href="index.html">
+        <img src="images/gallery/Image_logo_two.png" alt="Dermaglow Logo" class="img-fluid" style="max-height: 70px;">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+
+          <!-- página inicio -->
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+
+          <!-- página nosotros -->
+          <li class="nav-item">
+            <a class="nav-link" href="Nosotros.html">Nosotros</a>
+          </li>
+
+          <!-- página salud general -->
+          <li class="nav-item">
+            <a class="nav-link" href="Salud.html">Salud general</a>
+          </li>
+
+          <!-- logo al centro en desktop -->
+          <a class="navbar-brand d-none d-lg-block" href="Index.html">
+            <img src="images/gallery/Image_logo_two.png" alt="Dermaglow Logo" class="img-fluid" style="max-height: 70px;">
+          </a>
+
+          <!-- página tratamientos -->
+          <li class="nav-item">
+            <a class="nav-link" href="Tratamientos.html">Tratamientos</a>
+          </li>
+
+          <!-- página contacto -->
+          <li class="nav-item">
+            <a class="nav-link" href="Contacto.html">Atención en línea</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <main>
+
+   <section id="sobre-nos" style="background-color: #ffffff; padding: 60px 0;">
+  <div style="max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 40px;">
+
+    <!-- Imagen del centro de salud -->
+    <div style="flex: 1 1 250px; text-align: center;">
+      <img src="images/gallery/Image_9.png" alt="Entrada del centro de salud" style="width:100%; max-width:300px; border-radius: 16px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+    </div>
+
+    <!-- Imagen representando bienestar -->
+    <div style="flex: 1 1 250px; text-align: center;">
+      <img src="images/gallery/Image_10.png" alt="Atención médica integral" style="width:100%; max-width:300px; border-radius: 16px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+    </div>
+
+    <!-- Sobre Salud -->
+<section class="sobre-salud" aria-labelledby="titulo-sobre-salud">
+  <h2 id="titulo-sobre-salud">
+<h2>Sobre <span style="color:#f87abf;">Salud</span></h2>
+  <h6 class="subtitulo">
+    Conoce nuestro compromiso con la salud y el bienestar integral
+  </h6>
+  <p style="text-align: justify;">Nuestra clínica nació con el propósito de ofrecer un espacio donde cada persona reciba atención médica integral, humana y profesional.
+    Contamos con un equipo multidisciplinario comprometido con la prevención, diagnóstico y tratamiento de distintas áreas de la salud.
+  </p>
+
+  <p style="text-align: justify;">
+    Brindamos servicios de medicina general, nutrición, fisioterapia y apoyo emocional, en un entorno seguro, moderno y acogedor.
+    Creemos que cuidar la salud es cuidar la vida, y trabajamos cada día para promover hábitos saludables y bienestar duradero.
+  </p>
+
+  <a href="#contacto" style="display: inline-block; background-color: #d9b060; color: white; padding: 12px 28px; border-radius: 30px; font-family: 'Poppins', sans-serif; text-decoration: none; margin-top: 20px; transition: 0.3s;"> Agenda tu cita médica ahora </a>
+</section>
+
+    </div>
+  </div>
+</section>
+<section id="servicos" style="background-color:#fff6f9;  padding: 80px 8%;">
+  <div style="text-align:center; margin-bottom:40px;">
+    <h2>¡Cuida tu bienestar y tu belleza!</h2>
+    <p class="faq-sub">La salud estética complementa la medicina general al cuidar la piel, rejuvenecer de forma natural y equilibrar cuerpo y mente. Nuestros tratamientos unen ciencia y bienestar para fortalecer la confianza personal.</p>
+  </div>
+
+  <!-- Botones de categorías -->
+  <div style="text-align:center; margin-bottom:40px;">
+    <button style="background-color:#d9b060; color:white; border:none; padding:10px 25px; border-radius:25px; margin:5px;">General</button>
+    <button style="background-color:#e0e0e0; color:#333; border:none; padding:10px 25px; border-radius:25px; margin:5px;">Nutrición</button>
+    <button style="background-color:#e0e0e0; color:#333; border:none; padding:10px 25px; border-radius:25px; margin:5px;">Dermatología</button>
+    <button style="background-color:#e0e0e0; color:#333; border:none; padding:10px 25px; border-radius:25px; margin:5px;">Psicología</button>
+    <button style="background-color:#e0e0e0; color:#333; border:none; padding:10px 25px; border-radius:25px; margin:5px;">Fisioterapia</button>
+
+  </div>
+
+  <!-- Tarjetas de servicios -->
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px; max-width:1100px; margin:0 auto;">
+    
+    <!-- Servicio 1 -->
+    <div style="background:white; border-radius:16px; box-shadow:0 3px 10px rgba(0,0,0,0.1); width:300px; padding:20px; text-align:center;">
+      <img src="images/gallery/Image_11.png" alt="Consulta médica general" style="width:100%; border-radius:12px; margin-bottom:15px;">
+      <h5>Consulta General</h5>
+      <p style="color:#555; font-family:'Poppins', sans-serif; font-size:0.95em;">
+        Evaluación integral del estado de salud. Diagnóstico y orientación médica personalizada para cada paciente.
+      </p>
+    </div>
+
+    <!-- Servicio 2 -->
+    <div style="background:white; border-radius:16px; box-shadow:0 3px 10px rgba(0,0,0,0.1); width:300px; padding:20px; text-align:center;">
+      <img src="images/gallery/Image_13.png" alt="Consulta nutricional" style="width:100%; border-radius:12px; margin-bottom:15px;">
+      <h5>Nutrición y Dietética</h5>
+      <p style="color:#555; font-family:'Poppins', sans-serif; font-size:0.95em;">
+        Planes alimenticios saludables adaptados a tus necesidades, enfocados en prevención y bienestar.
+      </p>
+    </div>
+
+    <!-- Servicio 3 -->
+    <div style="background:white; border-radius:16px; box-shadow:0 3px 10px rgba(0,0,0,0.1); width:300px; padding:20px; text-align:center;">
+      <img src="images/gallery/Image_14.png" alt="Terapia física" style="width:100%; border-radius:12px; margin-bottom:15px;">
+      <h5>Fisioterapia</h5>
+      <p style="color:#555; font-family:'Poppins', sans-serif; font-size:0.95em;">
+        Tratamientos para la recuperación muscular, rehabilitación física y alivio de dolores crónicos.
+      </p>
+    </div>
+
+  </div>
+</section>
+        </main>
+
+        <footer class="site-footer section-padding" id="contact">
+    <div class="container">
+        <div class="row">
+
+            <!-- Horario de atención -->
+            <div class="col-lg-5 me-auto col-12">
+                <h5 class="mb-lg-4 mb-3">Horario de Atención</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex">
+                        Domingo : Cerrado
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        Lunes a Viernes <span>8:00 AM - 19:30 PM</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        Sábados <span>10:30 AM - 5:30 PM</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Información de la clínica -->
+            <div class="col-lg-2 col-md-6 col-12 my-4 my-lg-0">
+                <h5 class="mb-lg-4 mb-3">Nuestra Clínica</h5>
+                <p>
+                    <a href="mailto:infodermaglow@gmail.com">infodermaglow@gmail.com</a>
+                </p>
+                <p>
+                    Torre Médica Solaris, Piso 10 - Consultorio 615<br>
+                    Calle José Orrantía Gonzales<br>
+                    Guayaquil - Ecuador
+                </p>
+            </div>
+
+            <!-- Redes sociales y logo -->
+            <div class="col-lg-3 col-md-6 col-12 ms-auto text-center">
+                <h5 class="mb-lg-4 mb-2">Encuéntranos en:</h5>
+                <ul class="social-icon">
+                    <li><a href="#" class="social-icon-link bi-facebook"></a></li>
+                    <li><a href="#" class="social-icon-link bi-twitter"></a></li>
+                    <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+                    <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+                </ul>
+
+                <div class="footer-bottom">
+                    <img src="images/gallery/Image_logo_one.png" alt="Logo Dermaglow" class="footer-logo">
+                    <p class="copyright-text">
+                        © Dermaglow 2025. Todos los derechos reservados.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/scrollspy.min.js"></script>
+        <script src="js/custom.js"></script>
+<!--
+
+TemplateMo 566 Medic Care
+
+https://templatemo.com/tm-566-medic-care
+
+-->
+    </body>
+</html>

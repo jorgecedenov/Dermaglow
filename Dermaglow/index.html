@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>CLÍNICA MEDICINA ESTÉTICA - Dermaglow</title>
+
+  <!-- CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/Style_dermaglow.css" rel="stylesheet">
+
+  <style>
+    :root { --topbar-h: 36px; }
+
+    /* barra arriba */
+    .top-bar{
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1040;
+      background: #d9b060;
+      color:#fff;
+      font-size:14px;
+      height: var(--topbar-h);
+      display: flex;
+      align-items: center;
+    }
+    .top-bar i{ margin-right:6px; }
+
+    /* navbar debajo de la barra */
+    .navbar.fixed-top{
+      top: var(--topbar-h);
+    }
+
+    /* MUY IMPORTANTE: esto debe ir en TODAS las páginas */
+    body{
+      padding-top: calc(var(--topbar-h) + 72px); /* 72px ≈ alto navbar */
+    }
+  </style>
+</head>
+<body id="top">
+
+  <!-- BARRA SUPERIOR -->
+  <div class="top-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div><i class="bi bi-telephone"></i> 0987304821</div>
+      <div><i class="bi bi-envelope"></i> infodermaglow@gmail.com</div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-lg">
+    <div class="container">
+
+      <!-- logo en móvil -->
+      <a class="navbar-brand mx-auto d-lg-none" href="index.html">
+        <img src="images/gallery/Image_logo_two.png" alt="Dermaglow Logo" class="img-fluid" style="max-height: 70px;">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+
+          <!-- página inicio -->
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+
+          <!-- página nosotros -->
+          <li class="nav-item">
+            <a class="nav-link" href="Nosotros.html">Nosotros</a>
+          </li>
+
+          <!-- página salud general -->
+          <li class="nav-item">
+            <a class="nav-link" href="Salud.html">Salud general</a>
+          </li>
+
+          <!-- logo al centro en desktop -->
+          <a class="navbar-brand d-none d-lg-block" href="index.html">
+            <img src="images/gallery/Image_logo_two.png" alt="Dermaglow Logo" class="img-fluid" style="max-height: 70px;">
+          </a>
+
+          <!-- página tratamientos -->
+          <li class="nav-item">
+            <a class="nav-link" href="Tratamientos.html">Tratamientos</a>
+          </li>
+
+          <!-- página contacto -->
+          <li class="nav-item">
+            <a class="nav-link" href="Contacto.html">Atención en línea</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <main>
+            <section class="hero" id="hero">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-12">
+                            <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/gallery/Image_2.jpg" class="img-fluid" alt="">
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src="images/slider/SLIDER_2.png" class="img-fluid" alt="">
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src="images/slider/SLIDER_1.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding" id="about">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <h5>Conoce nuestra historia</h2>
+                    <h2 class="mt-auto mb-2">
+                                    Somos
+                                  <div class="animated-info">
+                                        <span class="animated-item">#Belleza</span>
+                                        <span class="animated-item">#Armonía</span>
+                                        <span class="animated-item">#Salud</span>
+                                    </div>
+                                    <br>
+                            <p style="text-align: justify;">
+                                Fundada en 2018, la <strong>Clínica Estética Dermaglow</strong> se especializa en tratamientos médicos sin cirugía y procedimientos anti-aging, orientados a mejorar la salud, la apariencia y el bienestar integral de nuestros pacientes. Contamos con profesionales capacitados y tecnología avanzada, lo que nos permite ofrecer resultados naturales y seguros. 
+                                <br><br>
+                                Nuestro enfoque combina la medicina estética con el cuidado personalizado, brindando servicios como rejuvenecimiento facial, depilación láser, tratamientos reductores, peelings y rellenos dérmicos. En <strong>Dermaglow</strong> creemos que la estética personal es parte esencial del bienestar, por eso trabajamos con ética, calidad y compromiso para resaltar la belleza de cada persona.</p>
+                        </div>
+
+                        <div class="col-lg-4 col-md-5 col-12 mx-auto">
+                            <div class="featured-circle bg-white shadow-lg d-flex justify-content-center align-items-center">
+                                <p class="featured-text"><span class="featured-number">08</span> Años<br> de experiencia</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="gallery">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-6 ps-0">
+                            <img src="images/gallery/Image_6.png" class="img-fluid galleryImage" alt="get a vaccine" title="get a vaccine for yourself">
+                        </div>
+
+                        <div class="col-lg-6 col-6 pe-0">
+                            <img src="images/gallery/Image_5.png" class="img-fluid galleryImage" alt="wear a mask" title="wear a mask to protect yourself">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="howitworks">
+  <h2>¿Cómo funciona?</h2>
+  <p class="subtitulo">De la idea a la realidad: pasos para tu transformación</p>
+
+  <div class="grid">
+    <div class="card-step">
+      <div class="icono"><i class="bi bi-file-earmark-text"></i></div>
+      <div class="titulo">Solicitud</div>
+      <div class="texto">
+        Conéctate con uno de nuestros asesores para resolver tus dudas y comenzar tu proceso.
+      </div>
+    </div>
+
+    <div class="card-step">
+      <div class="icono"><i class="bi bi-search"></i></div>
+      <div class="titulo">Evaluación</div>
+      <div class="texto">
+        Analizamos tus condiciones y expectativas para garantizar resultados seguros.
+      </div>
+    </div>
+
+    <div class="card-step">
+      <div class="icono"><i class="bi bi-folder2-open"></i></div>
+      <div class="titulo">Documentación</div>
+      <div class="texto">
+        Te solicitaremos documentos y exámenes para planificar tu procedimiento.
+      </div>
+    </div>
+
+    <div class="card-step">
+      <div class="icono"><i class="bi bi-heart"></i></div>
+      <div class="titulo">Cirugía</div>
+      <div class="texto">
+        Cumplidos los pasos anteriores, agendamos tu cirugía para hacer realidad tu cambio.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="procedimientos" id="procedimientos">
+  <h2>Nuestros Procedimientos</h2>
+  <p class="sub">Una Abordaje Personalizado para tu Transformación</p>
+
+  <div class="proc-grid">
+    <!-- Card 1 -->
+    <article class="proc-card">
+      <div class="proc-icon">
+        <!-- usa un PNG/SVG o un icono -->
+        <img src="images/gallery/mastopexia.png" alt="Mastopexia">
+        <!-- o con Bootstrap Icons: <i class="bi bi-body-text"></i> -->
+      </div>
+      <h3 class="proc-title">Mastopexia con Prótesis</h3>
+      <p class="proc-text">Eleva tu autoestima con senos firmes y naturalmente proporcionados.</p>
+      <a href="#contact" class="proc-btn">Saber más</a>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="proc-card">
+      <div class="proc-icon">
+        <img src="images/gallery/torso.png" alt="Lipoescultura">
+      </div>
+      <h3 class="proc-title">Lipoescultura</h3>
+      <p class="proc-text">Esculpe y realza tu silueta de manera elegante y segura.</p>
+      <a href="#contact" class="proc-btn">Saber más</a>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="proc-card">
+      <div class="proc-icon">
+        <img src="images/gallery/pecho.png" alt="Mama Reductora">
+      </div>
+      <h3 class="proc-title">Mama Reductora</h3>
+      <p class="proc-text">Redefine tu contorno con mayor comodidad y confianza.</p>
+      <a href="#contact" class="proc-btn">Saber más</a>
+    </article>
+
+    <!-- Card 4 -->
+    <article class="proc-card">
+      <div class="proc-icon">
+        <img src="images/gallery/cirugia-plastica.png" alt="Prótesis de Silicón">
+      </div>
+      <h3 class="proc-title">Prótesis de Silicón</h3>
+      <p class="proc-text">Resultados naturales y duraderos con alta biocompatibilidad.</p>
+      <a href="#contact" class="proc-btn">Saber más</a>
+    </article>
+
+    <!-- Card 5 -->
+    <article class="proc-card">
+      <div class="proc-icon">
+        <img src="images/gallery/delgado.png" alt="Lipo HD">
+      </div>
+      <h3 class="proc-title">Lipo HD</h3>
+      <p class="proc-text">Definición muscular y contorno corporal de alto detalle.</p>
+      <a href="#contact" class="proc-btn">Saber más</a>
+    </article>
+
+    <!-- Card 6 -->
+    <article class="proc-card">
+      <div class="proc-icon">
+        <img src="images/gallery/ojo.png" alt="Blefaroplastia">
+      </div>
+      <h3 class="proc-title">Blefaroplastia</h3>
+      <p class="proc-text">Rejuvenece tu mirada corrigiendo el exceso de piel y bolsas.</p>
+      <a href="#contact" class="proc-btn">Saber más</a>
+    </article>
+  </div>
+</section>
+<section class="faq-section" id="faq">
+  <div class="container-faq">
+    <!-- Columna izquierda -->
+    <div class="faq-form">
+      <h3 class="faq-title">Dermaglow</h3>
+      <p class="faq-text">
+        Descubre cómo podemos moldear tus sueños en realidad. Agenda tu consulta ahora para discutir tus metas estéticas y dar el primer paso hacia tu transformación.
+      </p>
+
+      <form>
+        <input type="text" placeholder="Tu nombre" required>
+        <select required>
+          <option value="">Selecciona una opción</option>
+          <option value="Lipoescultura">Lipoescultura</option>
+          <option value="Mastopexia">Mastopexia</option>
+          <option value="Rellenos">Rellenos faciales</option>
+        </select>
+        <input type="email" placeholder="Correo electrónico" required>
+        <input type="tel" placeholder="Teléfono">
+        <button type="submit">Registrarme</button>
+      </form>
+    </div>
+
+    <!-- Columna derecha -->
+    <div class="faq-content">
+      <h2>Preguntas Frecuentes – Dermaglow</h2>
+      <p class="faq-sub">Aclara tus dudas sobre nuestros tratamientos estéticos</p>
+
+      <div class="faq-item">
+        <button class="faq-question">¿Cuáles son los tratamientos que ofrece Dermaglow?</button>
+        <div class="faq-answer">
+          <p>Ofrecemos procedimientos como lipoescultura, mastopexia, rellenos dérmicos, botox, depilación láser, rejuvenecimiento facial, entre otros tratamientos estéticos personalizados.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">¿Cómo puedo agendar una cita o valoración?</button>
+        <div class="faq-answer">
+          <p>Puedes comunicarte con nosotros a través del formulario de contacto, WhatsApp o visitando nuestras instalaciones en Ventanas, Los Ríos.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">¿Los tratamientos son dolorosos?</button>
+        <div class="faq-answer">
+          <p>La mayoría de los procedimientos son mínimamente invasivos y se realizan con anestesia local o tópica para tu comodidad.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">¿Cuánto dura el proceso de recuperación?</button>
+        <div class="faq-answer">
+          <p>Depende del tratamiento. Por lo general, la recuperación inicial tarda entre 3 y 7 días, con resultados visibles en pocas semanas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+        </main>
+
+        <footer class="site-footer section-padding" id="contact">
+    <div class="container">
+        <div class="row">
+
+            <!-- Horario de atención -->
+            <div class="col-lg-5 me-auto col-12">
+                <h5 class="mb-lg-4 mb-3">Horario de Atención</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex">
+                        Domingo : Cerrado
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        Lunes a Viernes <span>8:00 AM - 19:30 PM</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        Sábados <span>10:30 AM - 5:30 PM</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Información de la clínica -->
+            <div class="col-lg-2 col-md-6 col-12 my-4 my-lg-0">
+                <h5 class="mb-lg-4 mb-3">Nuestra Clínica</h5>
+                <p>
+                    <a href="mailto:infodermaglow@gmail.com">infodermaglow@gmail.com</a>
+                </p>
+                <p>
+                    Torre Médica Solaris, Piso 10 - Consultorio 615<br>
+                    Calle José Orrantía Gonzales<br>
+                    Guayaquil - Ecuador
+                </p>
+            </div>
+
+            <!-- Redes sociales y logo -->
+            <div class="col-lg-3 col-md-6 col-12 ms-auto text-center">
+                <h5 class="mb-lg-4 mb-2">Encuéntranos en:</h5>
+                <ul class="social-icon">
+                    <li><a href="#" class="social-icon-link bi-facebook"></a></li>
+                    <li><a href="#" class="social-icon-link bi-twitter"></a></li>
+                    <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+                    <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+                </ul>
+
+                <div class="footer-bottom">
+                    <img src="images/gallery/Image_logo_one.png" alt="Logo Dermaglow" class="footer-logo">
+                    <p class="copyright-text">
+                        © Dermaglow 2025. Todos los derechos reservados.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/scrollspy.min.js"></script>
+        <script src="js/custom.js"></script>
+<!--
+
+TemplateMo 566 Medic Care
+
+https://templatemo.com/tm-566-medic-care
+
+-->
+    </body>
+</html>
