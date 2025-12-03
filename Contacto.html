@@ -190,9 +190,10 @@ document.querySelector(".form-cita").addEventListener("submit", async function(e
   });
 
   if (response.ok) {
-    alert("¡Tu mensaje ha sido enviado correctamente!");
-    form.reset();
-    window.location.href = "index"; // redirección
+  alert("¡Tu mensaje ha sido enviado correctamente!");
+  form.reset();
+  window.location.href = "index.html"; // redirección correcta
+}
   } else {
     alert("Ocurrió un error al enviar el mensaje. Inténtalo de nuevo.");
   }
