@@ -40,6 +40,24 @@
     body{
       padding-top: calc(var(--topbar-h) + 72px); /* 72px ≈ alto navbar */
     }
+
+.input-like {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 6px;
+  border: 1px solid var(--bordes);
+  background: #fff;
+  font-size: 15px;
+  color: #333;
+  outline: none;
+  resize: vertical;
+  transition: border-color .2s, box-shadow .2s;
+}
+
+.input-like:focus {
+  border-color: var(--rosa);
+  box-shadow: 0 0 0 3px #f87abf22;
+}
   </style>
 </head>
 <body id="top">
@@ -164,9 +182,9 @@
 
   <!-- Apartado de mensaje -->
   <div class="field">
-    <label for="mensaje" class="sr-only">Mensaje</label>
-    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje (opcional)" rows="4"></textarea>
-  </div>
+  <label for="mensaje" class="sr-only">Mensaje</label>
+  <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje (opcional)" rows="4" class="input-like"></textarea>
+</div>
 
   <!-- Aceptación privacidad -->
 <label class="checkbox">
