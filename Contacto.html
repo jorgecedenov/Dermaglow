@@ -128,46 +128,77 @@
     <!-- Aviso intermedio -->
     <div class="pill">Si necesitas uno de nuestros tratamientos para regalar, <a href="#tarjeta">solicítanos tu Tarjeta Regalo</a></div>
 
-    <!-- Formulario -->
-    <form class="form-cita" action="https://formspree.io/f/xkgplblv" method="POST" novalidate>
-      <div class="grid">
-        <div class="field">
-          <label for="nombre" class="sr-only">Nombre</label>
-          <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
-        </div>
+<!-- Formulario -->
+<form class="form-cita" action="https://formspree.io/f/xkgplblv" method="POST" novalidate>
+  <div class="grid">
 
-        <div class="field">
-          <label for="telefono" class="sr-only">Teléfono</label>
-          <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" inputmode="tel" pattern="[0-9+\s\-()]{7,}" required>
-        </div>
+    <div class="field">
+      <label for="nombre" class="sr-only">Nombre</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+    </div>
 
-        <div class="field">
-          <label for="email" class="sr-only">Email</label>
-          <input type="email" id="email" name="email" placeholder="Email" required>
-        </div>
+    <div class="field">
+      <label for="telefono" class="sr-only">Teléfono</label>
+      <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" inputmode="tel"
+      pattern="[0-9+\s\-()]{7,}" required>
+    </div>
 
-        <div class="field">
-          <label for="especialidad" class="sr-only">Seleccione Especialidad</label>
-          <select id="especialidad" name="especialidad" required>
-            <option value="" selected disabled>Seleccione Especialidad</option>
-            <option>Medicina estética</option>
-            <option>Nutrición y Dietética</option>
-            <option>Fisioterapia</option>
-            <option>Dermatología</option>
-            <option>Consulta general</option>
-          </select>
-        </div>
-      </div>
+    <div class="field">
+      <label for="email" class="sr-only">Email</label>
+      <input type="email" id="email" name="email" placeholder="Email" required>
+    </div>
 
-      <label class="checkbox">
-        <input type="checkbox" name="acepta" required>
-        <span>He leído y acepto la <a href="#privacidad">política de privacidad</a></span>
-      </label>
+    <div class="field">
+      <label for="especialidad" class="sr-only">Seleccione Especialidad</label>
+      <select id="especialidad" name="especialidad" required>
+        <option value="" selected disabled>Seleccione Especialidad</option>
+        <option>Medicina estética</option>
+        <option>Nutrición y Dietética</option>
+        <option>Fisioterapia</option>
+        <option>Dermatología</option>
+        <option>Consulta general</option>
+      </select>
+    </div>
 
-      <button type="submit" class="btn-enviar">ENVIAR</button>
-    </form>
   </div>
-</section>
+
+  <!-- Apartado de mensaje -->
+  <div class="field">
+    <label for="mensaje" class="sr-only">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje (opcional)" rows="4"></textarea>
+  </div>
+
+  <!-- Aceptación privacidad -->
+  <label class="checkbox">
+    <input type="checkbox" name="acepta" required>
+    <span>He leído y acepto la <a href="#privacidad">política de privacidad</a></span>
+  </label>
+
+  <button type="submit">Enviar</button>
+</form>
+
+    <script>
+document.querySelector(".form-cita").addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  const form = e.target;
+
+  const response = await fetch(form.action, {
+    method: "POST",
+    body: new FormData(form),
+    headers: { "Accept": "application/json" }
+  });
+
+  if (response.ok) {
+    alert("¡Tu mensaje ha sido enviado correctamente!");
+    form.reset();
+    window.location.href = "index"; // redirección
+  } else {
+    alert("Ocurrió un error al enviar el mensaje. Inténtalo de nuevo.");
+  }
+});
+</script>
+
 
 <style>
   :root{
