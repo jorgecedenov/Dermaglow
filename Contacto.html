@@ -124,7 +124,27 @@
   <br>
 
 <section class="cita-previa" id="cita">
-  <!-- Formulario -->
+  <div class="cita-container">
+    <!-- Botones superiores opcionales -->
+    <div class="cta-row">
+      <a href="tel:"+1 (718) 807-5065" class="cta-ghost">LLAMA AHORA</a>
+      <a href="https://wa.me/593000000000" target="_blank" rel="noopener" class="cta-wa">WHATSAPP</a>
+    </div>
+
+    <h3 class="titulo">CITA PREVIA</h3>
+    <p class="subtitulo">CLÍNICA MEDICINA ESTÉTICA DERMAGLOW</p>
+
+    <p class="lead">
+      Lo importante es la salud de nuestros pacientes, física y emocionalmente.
+      Pide tu cita <strong>GRATIS</strong> y sin compromiso para evaluar tu caso y recibir un
+      <strong>diagnóstico personalizado</strong>.
+    </p>
+
+    <!-- Aviso intermedio -->
+   <div class="pill">Si necesitas uno de nuestros tratamientos para regalar, <a href="#tarjeta">solicítanos tu Tarjeta Regalo</a></div>
+
+<!-- Formulario -->
+<form class="form-cita" action="https://formspree.io/f/xkgplblv" method="POST" novalidate>
 <form class="form-cita" action="https://formspree.io/f/xkgplblv" method="POST" novalidate>
   <div class="grid">
 
@@ -156,21 +176,7 @@
       </select>
     </div>
 
-    <!-- NUEVO CAMPO: DÍA -->
-    <div class="field">
-      <label for="dia" class="sr-only">Día de la cita</label>
-      <select id="dia" name="dia" required>
-        <option value="" selected disabled>Día de la cita</option>
-        <option>Lunes</option>
-        <option>Martes</option>
-        <option>Miércoles</option>
-        <option>Jueves</option>
-        <option>Viernes</option>
-        <option>Sábado</option>
-      </select>
-    </div>
-
-    <!-- CAMPO: HORARIO -->
+    <!-- NUEVO CAMPO: HORARIO -->
     <div class="field">
       <label for="horario" class="sr-only">Horario de atención</label>
       <select id="horario" name="horario" required>
@@ -219,21 +225,11 @@
   <button type="submit" class="btn-enviar">ENVIAR</button>
 </form>
 
-<script>
+    <script>
 document.querySelector(".form-cita").addEventListener("submit", async function(e) {
   e.preventDefault();
 
   const form = e.target;
-
-  const especialidad = form.especialidad.value;
-  const dia = form.dia.value;
-  const horario = form.horario.value;
-
-  // Validación extra: si hay especialidad, obligamos día y horario
-  if (especialidad && (!dia || !horario)) {
-    alert("Por favor selecciona el día y el horario de tu cita.");
-    return;
-  }
 
   const response = await fetch(form.action, {
     method: "POST",
@@ -242,36 +238,15 @@ document.querySelector(".form-cita").addEventListener("submit", async function(e
   });
 
   if (response.ok) {
-    alert("¡Tu mensaje ha sido enviado correctamente!");
-    form.reset();
-    window.location.href = "index.html"; // redirección correcta
+  alert("¡Tu mensaje ha sido enviado correctamente!");
+  form.reset();
+  window.location.href = "index.html"; // redirección correcta
+}
   } else {
     alert("Ocurrió un error al enviar el mensaje. Inténtalo de nuevo.");
   }
 });
-</script>
-  <div class="cita-container">
-    <!-- Botones superiores opcionales -->
-    <div class="cta-row">
-      <a href="tel:+593000000000" class="cta-ghost">LLAMA AHORA</a>
-      <a href="https://wa.me/593000000000" target="_blank" rel="noopener" class="cta-wa">WHATSAPP</a>
-    </div>
-
-    <h3 class="titulo">CITA PREVIA</h3>
-    <p class="subtitulo">CLÍNICA MEDICINA ESTÉTICA DERMAGLOW</p>
-
-    <p class="lead">
-      Lo importante es la salud de nuestros pacientes, física y emocionalmente.
-      Pide tu cita <strong>GRATIS</strong> y sin compromiso para evaluar tu caso y recibir un
-      <strong>diagnóstico personalizado</strong>.
-    </p>
-
-    <!-- Aviso intermedio -->
-    <div class="pill">Si necesitas uno de nuestros tratamientos para regalar, <a href="#tarjeta">solicítanos tu Tarjeta Regalo</a></div>
-
-<!-- Formulario -->
-
-
+    </script>
 
 <style>
   :root{
